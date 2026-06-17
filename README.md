@@ -1,14 +1,7 @@
 
 
 
-  <p align="center">
-    <a href="https://twitter.com/techcifer"><img src="https://img.shields.io/badge/Twitter-00bcd4?logo=x&logoColor=black"/></a>
-    <a href="https://www.instagram.com/cifertech/"><img src="https://img.shields.io/badge/Instagram-00bcd4?logo=instagram&logoColor=black"/></a>
-    <a href="https://www.youtube.com/@techcifer"><img src="https://img.shields.io/badge/YouTube-00bcd4?logo=youtube&logoColor=black"/></a>
-    <a href="https://cifertech.net/"><img src="https://img.shields.io/badge/Website-00bcd4?logo=googlechrome&logoColor=black"/></a>
-  </p>
 
-</div>
 
 ## 📖 Explore the nRFBox Wiki
 
@@ -137,15 +130,6 @@ nRFBOX is a wireless toolkit designed to explore, analyze, and interact with var
 Distributed under the MIT License. See LICENSE.txt for more information.
 
 
-
-<!-- Contact -->
-## :handshake: Contact
-
-▶ Support me on Patreon [patreon.com/cifertech](https://www.patreon.com/cifertech)
-
-CiferTech - [@twitter](https://twitter.com/techcifer) - CiferTech@gmali.com
-
-Project Link: [https://github.com/cifertech/nRFBOX](https://github.com/cifertech/nrfbox)
 
 
 
