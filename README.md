@@ -3,17 +3,18 @@
 > **Note:** This is a forked repository. The original nRFBox was designed and created by [CiferTech](https://github.com/cifertech/nRFBox). All core design, code, and documentation credits belong to them! 
 
 ## 🛠️ About My Build
-I assembled and modified this iteration of the nRFBox v3 as part of my practical hardware coursework and projects at VIT Bhopal. My main focus for this build was testing protocol vulnerabilities and optimizing the hardware to handle the power demands of running multiple modules concurrently without dropping signals.
+I assembled and modified this iteration of the nRFBox v3 as a multi-functional hardware project. Beyond the core wireless analysis capabilities, I heavily modified the power system to integrate an emergency power bank. This turns the device into a survival/utility tool capable of keeping itself powered under heavy module loads or charging external devices in an emergency.
 
 ## ⚙️ Hardware Sourced & Modifications
-* **Microcontroller:** ESP32 Wroom32U
+* **Microcontroller:** ESP32 (30 pins)
 * **Transceivers:** Multiple NRF24 modules
+* **Display:** 0.96" I2C OLED Display 
+* **Power System Upgrade:**  Integrated a power bank module to handle simultaneous charging and discharging (Pass-Through power).
+  * Connected a **3000 mAh Lithium-Polymer (LiPo)** to provide extended runtime.
+  * Added an external USB-A output port dedicated to emergency device charging.
 * **Custom Soldering/Wiring:** To address the known power instability when running multiple NRF modules simultaneously, I added specific 3.3 volt power modules for each NRF24 modules . This stabilized the voltage drops during heavy transmission spikes.
 * **Enclosure:** *I cut out a plastic box to fit in the electronics*
 
-## 🚧 Troubleshooting & Build Notes
-1. **Module Power Delivery:** As warned in the original documentation, the standard ESP32 regulator struggles to output enough current for three NRF modules during active jamming or scanning. The micro-capacitor modification completely resolved the intermittent reboot loops I was experiencing during BLE spoofing.
-2. **Scanner Reliability:** *(Add any notes about your experience with the 2.4GHz scanner here)*
 
 ## 📸 Gallery
 <img width="3636" height="1976" alt="IMG_20260618_002430" src="https://github.com/user-attachments/assets/6626a3c9-14fb-44c8-84b9-0f1a1ee11c8e" />
