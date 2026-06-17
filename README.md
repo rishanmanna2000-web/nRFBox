@@ -3,20 +3,21 @@
 > **Note:** This is a forked repository. The original nRFBox was designed and created by [CiferTech](https://github.com/cifertech/nRFBox). All core design, code, and documentation credits belong to them! 
 
 ## 🛠️ About My Build
-I assembled and modified this iteration of the nRFBox as part of my practical hardware coursework and projects at VIT Bhopal. My main focus for this build was testing protocol vulnerabilities and optimizing the hardware to handle the power demands of running multiple modules concurrently without dropping signals.
+I assembled and modified this iteration of the nRFBox v3 as part of my practical hardware coursework and projects at VIT Bhopal. My main focus for this build was testing protocol vulnerabilities and optimizing the hardware to handle the power demands of running multiple modules concurrently without dropping signals.
 
 ## ⚙️ Hardware Sourced & Modifications
 * **Microcontroller:** ESP32 Wroom32U
 * **Transceivers:** Multiple NRF24 modules
-* **Custom Soldering/Wiring:** To address the known power instability when running multiple NRF modules simultaneously, I soldered specific micro-capacitors directly across the VCC and GND pins of the modules. This stabilized the voltage drops during heavy transmission spikes.
-* **Enclosure:** *(Add your specific case or 3D printing details here)*
+* **Custom Soldering/Wiring:** To address the known power instability when running multiple NRF modules simultaneously, I added specific 3.3 volt power modules for each NRF24 modules . This stabilized the voltage drops during heavy transmission spikes.
+* **Enclosure:** *I cut out a plastic box to fit in the electronics*
 
 ## 🚧 Troubleshooting & Build Notes
 1. **Module Power Delivery:** As warned in the original documentation, the standard ESP32 regulator struggles to output enough current for three NRF modules during active jamming or scanning. The micro-capacitor modification completely resolved the intermittent reboot loops I was experiencing during BLE spoofing.
 2. **Scanner Reliability:** *(Add any notes about your experience with the 2.4GHz scanner here)*
 
 ## 📸 Gallery
-*(Drag and drop photos of your completed build, wiring, and the OLED screen in action here)*
+<img width="3636" height="1976" alt="IMG_20260618_002430" src="https://github.com/user-attachments/assets/6626a3c9-14fb-44c8-84b9-0f1a1ee11c8e" />
+
 
 ---
 
