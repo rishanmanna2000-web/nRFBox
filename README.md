@@ -1,20 +1,5 @@
 
 
-<div align="center">
-
-  <img src="https://github.com/user-attachments/assets/1f3df5b3-2d5c-416c-a17d-5b5da61423dd" alt="nRFBOX Banner" width="100%"/>
-
-  <br/>
-  <br/>
-
-  <p align="center">
-    <a href="https://github.com/cifertech/nrfbox"><img src="https://img.shields.io/static/v1?label=cifertech&message=nrfbox&color=00bcd4&logo=github"/></a>
-    <a href="https://github.com/cifertech/nrfbox"><img src="https://img.shields.io/github/stars/cifertech/nrfbox?style=social"/></a>
-    <a href="https://github.com/cifertech/nrfbox"><img src="https://img.shields.io/github/forks/cifertech/nrfbox?style=social"/></a>
-    <img src="https://img.shields.io/github/downloads/cifertech/nrfbox/total?color=00bcd4&label=downloads&logo=github"/>
-    <img src="https://img.shields.io/badge/nRF24-BLE%20%2B%202.4GHz-00bcd4"/>
-    <img src="https://img.shields.io/badge/license-MIT-00bcd4"/>
-  </p>
 
   <p align="center">
     <a href="https://twitter.com/techcifer"><img src="https://img.shields.io/badge/Twitter-00bcd4?logo=x&logoColor=black"/></a>
