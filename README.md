@@ -1,7 +1,26 @@
+# NrfBox - Custom Build & Modifications
 
+> **Note:** This is a forked repository. The original nRFBox was designed and created by [CiferTech](https://github.com/cifertech/nRFBox). All core design, code, and documentation credits belong to them! 
 
+## 🛠️ About My Build
+I assembled and modified this iteration of the nRFBox as part of my practical hardware coursework and projects at VIT Bhopal. My main focus for this build was testing protocol vulnerabilities and optimizing the hardware to handle the power demands of running multiple modules concurrently without dropping signals.
 
+## ⚙️ Hardware Sourced & Modifications
+* **Microcontroller:** ESP32 Wroom32U
+* **Transceivers:** Multiple NRF24 modules
+* **Custom Soldering/Wiring:** To address the known power instability when running multiple NRF modules simultaneously, I soldered specific micro-capacitors directly across the VCC and GND pins of the modules. This stabilized the voltage drops during heavy transmission spikes.
+* **Enclosure:** *(Add your specific case or 3D printing details here)*
 
+## 🚧 Troubleshooting & Build Notes
+1. **Module Power Delivery:** As warned in the original documentation, the standard ESP32 regulator struggles to output enough current for three NRF modules during active jamming or scanning. The micro-capacitor modification completely resolved the intermittent reboot loops I was experiencing during BLE spoofing.
+2. **Scanner Reliability:** *(Add any notes about your experience with the 2.4GHz scanner here)*
+
+## 📸 Gallery
+*(Drag and drop photos of your completed build, wiring, and the OLED screen in action here)*
+
+---
+
+# Original Documentation by CiferTech
 
 ## 📖 Explore the nRFBox Wiki
 
@@ -65,21 +84,15 @@ Complete project story, in-depth tutorials, and all the features in [Wiki](https
 > - **Range Limitations**: The jammer is most effective at short range. Beyond a certain distance, the signal weakens, making it harder to consistently disrupt communication.
 > - **Device Variability**: Different devices react to jamming signals in varying ways. Some may be more resistant.
 
-
-
 <div>&nbsp;</div>
 
 <!-- About the Project -->
 ## :star2: About the Project
 nRFBOX is a wireless toolkit designed to explore, analyze, and interact with various wireless communication protocols. It combines the ESP32 Wroom32U, NRF24 modules, an OLED display, and other components to create a multifunctional device that can act as a scanner, analyzer, jammer, BLE jammer, BLE spoofer, and perform advanced tasks such as the "Sour Apple" attack.
 
-
-
 <div align="center"> 
   <img src="https://github.com/user-attachments/assets/1d49f15d-45be-4ed4-b92a-842d628c8695" alt="screenshot" width="Auto" height="Auto" />
 </div>
-
-
 
 <!-- Features -->
 ### 🎯 Features
@@ -96,7 +109,6 @@ nRFBOX is a wireless toolkit designed to explore, analyze, and interact with var
 - **Wi-Fi Deauthentication Attack** - Send deauthentication frames to disrupt client connections
 
 > Explore the nRFBOX's features in detail at the [nRFBOX Wiki](https://github.com/cifertech/nRFBox/wiki/Features)! 
-
 
 <div>&nbsp;</div>
 
@@ -121,17 +133,10 @@ nRFBOX is a wireless toolkit designed to explore, analyze, and interact with var
   </tr>
 </table>
 
-
-
-
 <!-- License -->
 ## :warning: License
 
 Distributed under the MIT License. See LICENSE.txt for more information.
-
-
-
-
 
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements 
@@ -145,4 +150,3 @@ Distributed under the MIT License. See LICENSE.txt for more information.
  - [ESP32-Sour-Apple](https://github.com/RapierXbox/ESP32-Sour-Apple)
 
 **Community Contributors**: Thanks to everyone who helped improve nRFBox! Your support is much appreciated!
-
